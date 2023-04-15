@@ -37,3 +37,8 @@ const App = () => {
 }
 
 export default App;
+
+
+// Note >>    if the search value is empty (i.e., an empty string), the data array will be filtered using data.filter() with an empty condition, which would evaluate to true for all elements in the data array. This means that all movies will be included in the filteredMovies array, and they will all be rendered in the component.
+
+// In other words, when search is empty, the filteredMovies array will contain all movies from the data array, and they will all be rendered in the ul element as li elements. This is why initially, before any user input in the input field, all movies are rendered in the component.
